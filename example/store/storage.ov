@@ -1,0 +1,21 @@
+/**
+ *  Storage in the OV's abstract syntax 
+ * 
+
+
+
+object Storage [o] { 
+    uint256 number;
+    // inv: number > 0
+    
+    public void store(uint256 num) <this,this> {
+        number = num;
+    }
+
+    public uint256 retrieve() <this,top> {
+        return number;
+    }
+}
+
+
+*/

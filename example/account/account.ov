@@ -1,0 +1,23 @@
+/**
+ *  Account in the OV's abstract syntax 
+ * 
+
+object Account [o] { 
+    uint256 balance;
+    // inv: balance > 0 && balance < 1e30
+    
+    public void deposit(uint256 balance) <this,this> {
+        balance += amount;
+    }
+
+    public void withdraw(uint256 balance) <this,this> {
+        balance -= amount;
+    }
+    
+    public uint256 retrieve() <this,top> {
+        return balance;
+    }
+}
+
+
+*/
